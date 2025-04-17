@@ -64,8 +64,12 @@
    - 运行前端项目：`npm run serve`
 5. 打开浏览器，访问 `http://localhost:8080` 查看平台运行效果。
 
+## 部分预览图
+<img width="372" alt="image" src="https://github.com/user-attachments/assets/031dabbc-92fc-4bb9-ae10-252e59d3db27" />
+<img width="375" alt="image" src="https://github.com/user-attachments/assets/90d70bdb-a515-43b1-98bd-07cefc0aae0d" />
+
+
 ## 注意事项
 
 - 实际运行效果见实验报告的第三部分，里面详细展示了平台的功能和操作。
 - 请根据自己的需求进行相关配置，确保项目能够顺利启动并运行。
-
