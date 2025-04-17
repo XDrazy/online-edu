@@ -11,27 +11,36 @@
 - **数据库**：MySQL
 - **持久层框架**：MyBatis-Plus
 
-## 项目结构
+### 前端部分 (`/frontend`)
 
-- **前端部分**：
-  - **/frontend/src**：Vue.js 项目源码
-    - **components**：Vue 组件
-    - **views**：页面视图
-    - **store**：Vuex 状态管理
-    - **router**：路由管理
-    - **assets**：静态资源
-  
-- **后端部分**：
-  - **/backend/src/main/java**：Java源代码
-    - **com.controller**：控制器层，处理前端请求
-    - **com.service**：服务层，处理业务逻辑
-    - **com.repository**：数据访问层，使用 MyBatis-Plus 进行数据交互
-    - **com.entity**：实体类，映射数据库表
-    - **com.config**：配置类，如数据库配置等
-  
-- **资源文件**：
-  - **/backend/src/main/resources**：包括数据库配置、静态文件和模板
-  - **/frontend/public**：前端静态资源
+- **/frontend/src**：Vue.js 项目源代码
+  - **/assets**：存放静态资源，如图片、字体、样式等。
+  - **/components**：Vue 组件，包含各种页面模块和通用组件。
+  - **/router**：Vue Router 配置，用于路由管理，定义页面跳转。
+  - **/store**：Vuex 状态管理，管理全局状态。
+  - **/views**：视图页面，包含具体的功能页面，如学生面板、教师面板等。
+  - **/utils**：工具类，存放常用的工具函数。
+  - **/public**：公共文件夹，包含一些公共静态资源和 `index.html` 页面。
+
+### 后端部分 (`/backend`)
+
+- **/backend/src/main/java/com/onlineedu**：后端 Java 源代码
+  - **/config**：配置类，包括数据库配置、Spring Security 配置等。
+  - **/controller**：控制器层，处理前端请求和返回数据。
+  - **/entity**：实体类，定义数据库表结构。
+  - **/repository**：数据访问层，使用 MyBatis-Plus 进行数据库交互。
+  - **/service**：服务层，包含具体的业务逻辑。
+  - **/service/impl**：服务实现层，业务逻辑的具体实现。
+  - **/utils**：工具类，包含常用的辅助方法，如文件上传、日期处理等。
+  - **/exception**：自定义异常类，用于处理后端异常。
+
+- **/backend/src/main/resources**：资源文件
+  - **/static**：静态文件夹，存放不需要经过处理的静态资源文件。
+  - **/templates**：模板文件夹，用于 Thymeleaf 等模板引擎的视图渲染。
+  - **/application.properties**：Spring Boot 配置文件，包含数据库连接配置等。
+  - **/mybatis-config.xml**：MyBatis 配置文件，配置 MyBatis 的相关信息。
+
+- **/backend/target/classes**：编译后的类文件和资源文件。
 
 ## 数据库配置
 
