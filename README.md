@@ -37,10 +37,9 @@
 - **/backend/src/main/resources**：资源文件
   - **/static**：静态文件夹，存放不需要经过处理的静态资源文件。
   - **/templates**：模板文件夹，用于 Thymeleaf 等模板引擎的视图渲染。
-  - **/application.properties**：Spring Boot 配置文件，包含数据库连接配置等。
+  - **/application.yml**：Spring Boot 配置文件，包含数据库连接配置等。
   - **/mybatis-config.xml**：MyBatis 配置文件，配置 MyBatis 的相关信息。
 
-- **/backend/target/classes**：编译后的类文件和资源文件。
 
 ## 数据库配置
 
